@@ -1,9 +1,10 @@
 class Zombie
   attr_accessor :name, :brains, :status
 
-  def initialize(options={})
+  def initialize(option={})
     self.status = option[:status]
     self.name = option[:name]
+    self.brains = option[:brains]
   end
 
   def public?
